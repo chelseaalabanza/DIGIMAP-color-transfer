@@ -1,0 +1,160 @@
+/* Font imports and definitions */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@font-face {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(font/material-design-icons/1.woff2) format('woff2');
+}
+@font-face {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Abel'), local('Abel-Regular'), url(font/material-design-icons/2.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+.material-icons {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(59, 59, 59, 0.02);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(41, 40, 40);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(74, 74, 72);
+}
+
+
+body {
+    height: max-content;
+    width: 100%;
+    background: linear-gradient(to bottom right, #181818, #000) no-repeat;
+    background-size: 100% 500vh;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.page-content {
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+/* Section styles */
+.section {
+    min-height: 20px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 3%;
+    row-gap: 5%;
+    padding: 4vh 8vh 4vh 10vh;
+    text-align: justify;
+    text-align-last: center;
+}
+#color, #overview, #how-it-works, #references {
+    background: rgba(22, 22, 22, 0.5);
+}
+
+#team {
+    background: rgba(0, 0, 0, 0.214);
+    min-height: 20px;
+    width: 100%;
+    padding: 8px;
+    padding-top: 25px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+
+}
+.page-heading {
+    margin: 6vh;
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+
+/* Link styles */
+a {
+    color: #282828!important;
+}
+a:hover {
+    color: #000!important;
+}
+.gh-link {
+    color: #ede7c2!important;
+}
+.gh-link:hover {
+    color: #91917d!important;
+}
+
+
+/* Other specific styles */
+canvas {
+    width: 100%;
+}
+.target_image {
+    height: 30%;
+}
+.source_image_area {
+    display: none;
+}
+.s1_5{
+    width:13.33333333333333333%;
+    
+}
+.btn-thin{
+    width:100%;
+    padding:0;
+}
+.modal-color{
+    height:43px;
+    max-width:80px;
+    margin-top:14px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+}
+input[type="text"] {
+    color: black!important;
+}
+#palette {
+    width: 100%;
+}
+#palette_e{
+    width: 100%;
+    display: none;
+}
+#confirm_change{
+    display: none;
+}
